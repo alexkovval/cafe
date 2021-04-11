@@ -16,14 +16,14 @@ export class PositionsService {
   }
 
   create(position: Position): Observable<Position> {
-    return this.http.post<Position>('http://localhost:5000/api/position', position)
+    return this.http.post<Position>('/api/position', position)
   }
 
   update(position: Position): Observable<Position> {
-    return this.http.patch<Position>(`http://localhost:5000/api/position/${position._id}`, position)
+    return this.http.patch<Position>(`/api/position/${position._id}`, position)
   }
 
   delete(position: Position): Observable<Message> {
-    return this.http.delete<Message>(`http://localhost:5000/api/position/${position._id}`)
+    return this.http.delete<Message>(`/api/position/${position._id}`)
   }
 }

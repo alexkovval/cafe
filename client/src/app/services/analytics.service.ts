@@ -13,7 +13,7 @@ export class AnalyticsService {
   constructor(private http: HttpClient) { }
 
 getOverview():Observable<OverviewPage>{
-return this.http.get<OverviewPage>('http://localhost:5000/api/analytics/overview')
+return this.http.get<OverviewPage>('/api/analytics/overview')
 }
 
 
