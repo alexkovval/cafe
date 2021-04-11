@@ -1,0 +1,6 @@
+/node_modules
+/config/keys.dev.js
+/client/etc
+npm-debug.log
+.DS_Store
+/*.env
