@@ -55,6 +55,7 @@ export class CategoriesFormComponent implements OnInit {
                 this.form.patchValue({
                   name: category.name
                 })
+                this.imagePreview = category.imageSrc
                 MaterialService.updateTextInputs()
               }
     
@@ -65,7 +66,7 @@ export class CategoriesFormComponent implements OnInit {
       }
     
   deleteCategory() {
-    const decision = window.confirm(`Вы уверены, что хотите удалить категорию "${this.category.name}"`)
+    const decision = window.confirm(`Are you sure that you'd like to delete "${this.category.name}?"`)
 
     if (decision) {
       this.categoriesService.delete(this.category._id)
