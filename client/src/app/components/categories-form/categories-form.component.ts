@@ -55,7 +55,6 @@ export class CategoriesFormComponent implements OnInit {
                 this.form.patchValue({
                   name: category.name
                 })
-                this.imagePreview = "http://localhost:5000/" + category.imageSrc
                 MaterialService.updateTextInputs()
               }
     

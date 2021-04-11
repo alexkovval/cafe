@@ -22,7 +22,6 @@ export class OrderCategoriesComponent implements OnInit {
         map(
           (categories: Category[]) => {
             return categories.map(category => {
-             //   category.imageSrc = "http://localhost:5000/"+category.imageSrc
                 return category
             })
           }
